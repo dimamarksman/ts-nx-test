@@ -1,4 +1,13 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "nxCloudId": "688f52fb6c9d9463c2883121"
+  "nxCloudId": "688f52fb6c9d9463c2883121",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "cache": true
+    },
+    "lint": {
+      "cache": true
+    }
+  }
 }
